@@ -34,7 +34,7 @@ const theme = createTheme({
 
 const TourCard = ({ tour }) => {
   return (
-    <Grid item xs={4}>
+    <Grid item xs={3}>
       <ThemeProvider theme={theme}>
         <Paper elevation={3}>
           <img src={tour.image} alt='basktball' className='img' />
