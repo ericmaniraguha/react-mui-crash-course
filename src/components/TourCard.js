@@ -15,7 +15,6 @@ const theme = createTheme({
           },
           style: {
             fontSize: 11,
-            backgroundColor: 'red',
           },
         },
 
