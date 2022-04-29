@@ -2,6 +2,9 @@ import { Box, Container } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import ImageCollage from '../components/ImageCollage';
 import CustomizedAccordions from '../components/Accordian';
+import BottomNavigation from '@mui/material/BottomNavigation';
+import Paper from '@mui/material/Paper';
+import NestedModal from '../components/Modal';
 
 const Tour = () => (
   <Container sx={{ width: 900 }}>
@@ -28,13 +31,21 @@ const Tour = () => (
       </Typography>
     </Box>
 
-    <Box>
+    <Box mb={10}>
       <Typography variant='h6' component='h4' mt={3} mb={2}>
         Frequently Asked Questions about Kigali and Is Kigali a good place to
         live?
       </Typography>
       <CustomizedAccordions />
     </Box>
+    <Paper
+      sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}
+      elevation={3}
+    >
+      <BottomNavigation>
+        <NestedModal />
+      </BottomNavigation>
+    </Paper>
   </Container>
 );
 
