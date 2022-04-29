@@ -2,13 +2,14 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
+import StaticDatePickerDemo from './DatePicker';
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -37,12 +38,7 @@ function ChildModal() {
         aria-describedby='child-modal-description'
       >
         <Box sx={{ ...style, width: 200 }}>
-          <h2 id='child-modal-title'>Major known idea about Rwanda.</h2>
-          <p id='child-modal-description'>
-            Rwanda's stunning scenery and warm, friendly people offer unique
-            experiences in one of the most remarkable countries in the world. .
-          </p>
-          <Button onClick={handleClose}>Say, Hi to Kigali People.</Button>
+          <StaticDatePickerDemo />
         </Box>
       </Modal>
     </React.Fragment>
